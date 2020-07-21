@@ -13,7 +13,7 @@ pip install -e .
 ## 改动之处
 1.改变了flow文件，使得能够在IED里运行flow（懒得去下一层再修改代码了），推荐pycharm；
 
-2.在darkflow/darkflow/net/yolov2文件夹下增加flow_realtimecamera.py和flow_readvideofile.py文件，这两个文件分别实现了调用相机实时显示结果、读取视频文件识别并输出，在使用的时候注意修改相对应设置，大华和海康相机的视频流调用方法均可在网上搜索到。但是在使用的时候要注意应该把文件名命名为flow.py才能调用，使用哪个就修改哪个；
+2.在darkflow/darkflow/net/文件夹下增加flow_realtimecamera.py和flow_readvideofile.py文件，这两个文件分别实现了调用相机实时显示结果、读取视频文件识别并输出，在使用的时候注意修改相对应设置，大华和海康相机的视频流调用方法均可在网上搜索到。但是在使用的时候要注意应该把文件名命名为flow.py才能调用，使用哪个就修改哪个；
 
 3..darkflow/文件夹下的label文件是调用相应weights所需要的标签名字文件，当调用的weights数据是由coco数据集训练出来时，应该用labels_coco.txt文件，当weights文件是由voc数据集训练出来的，用labels_voc.txt文件，使用的时候均要将其重命名为labels.txt。
 
