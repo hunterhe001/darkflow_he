@@ -1,0 +1,23 @@
+#! /usr/bin/env python
+
+import sys
+from darkflow.cli import cliHandler
+
+#cliHandler('--model cfg/trial6.cfg' '--load cfg/trial6_653550.weight')
+a = []
+a.append('flow')
+a.append('--model')
+#a.append('./cfg/trial6.cfg')
+#a.append('./cfg/tiny-yolov2-voc-noBatch.cfg')
+a.append('./cfg/tiny-yolov2-trial13.cfg')
+#a.append('./cfg/tiny-yolov2-trial5.cfg')
+#a.append('./cfg/yolov3-tiny.cfg')
+a.append('--load')
+#a.append('./cfg/trial6_653550.weights')
+#a.append('./cfg/trial6_653550.weights')
+#a.append('./cfg/tiny-yolov2-voc_noBatch.weights')
+a.append('./cfg/tiny-yolov2-trial13.weights')
+#a.append('./cfg/tiny-yolov2-trial5.weights')
+#a.append('./cfg/yolov3-tiny.weights')
+cliHandler(a)
+
